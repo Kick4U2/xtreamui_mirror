@@ -5,7 +5,7 @@ from itertools import cycle, izip
 from zipfile import ZipFile
 from urllib2 import Request, urlopen, URLError, HTTPError
 
-rDownloadURL = {"main": "https://bitbucket.org/le_lio/assets/raw/master/main_xtreamcodes_reborn.tar.gz", "sub": "https://bitbucket.org/le_lio/assets/raw/master/sub_xtreamcodes_reborn.tar.gz"}
+rDownloadURL = {"main": "https://bitbucket.org/le_lio/assets/raw/e68bb381ee7b7b47ce1e95ede23ffbc2d688ae81/main_xui_neyslim.tar.gz", "sub": "https://bitbucket.org/le_lio/assets/raw/e68bb381ee7b7b47ce1e95ede23ffbc2d688ae81/sub_xui_neyslim.tar.gz"}
 rPackages = ["curl", "libcurl4", "libxslt1-dev", "libgeoip-dev", "e2fsprogs", "wget", "mcrypt", "nscd", "htop", "zip", "unzip", "mc", "mariadb-server", "libzip5"]
 rInstall = {"MAIN": "main", "LB": "sub"}
 rUpdate = {"UPDATE": "update"}
@@ -192,8 +192,8 @@ def configure():
     if not os.path.exists("/home/xtreamcodes/iptv_xtream_codes/tv_archive"): os.mkdir("/home/xtreamcodes/iptv_xtream_codes/tv_archive/")
     os.system("ln -s /home/xtreamcodes/iptv_xtream_codes/bin/ffmpeg /usr/bin/")
     os.system("chattr -i /home/xtreamcodes/iptv_xtream_codes/GeoLite2.mmdb > /dev/null")
-    os.system("wget -q https://bitbucket.org/le_lio/assets/raw/master/GeoLite2.mmdb -O /home/xtreamcodes/iptv_xtream_codes/GeoLite2.mmdb")
-    os.system("wget -q https://bitbucket.org/le_lio/assets/raw/master/pid_monitor.php -O /home/xtreamcodes/iptv_xtream_codes/crons/pid_monitor.php")
+    os.system("wget -q https://bitbucket.org/le_lio/assets/raw/e68bb381ee7b7b47ce1e95ede23ffbc2d688ae81/GeoLite2.mmdb -O /home/xtreamcodes/iptv_xtream_codes/GeoLite2.mmdb")
+    os.system("wget -q https://bitbucket.org/le_lio/assets/raw/e68bb381ee7b7b47ce1e95ede23ffbc2d688ae81/pid_monitor.php -O /home/xtreamcodes/iptv_xtream_codes/crons/pid_monitor.php")
     os.system("chown xtreamcodes:xtreamcodes -R /home/xtreamcodes > /dev/null")
     os.system("chmod -R 0777 /home/xtreamcodes > /dev/null")
     os.system("chattr +i /home/xtreamcodes/iptv_xtream_codes/GeoLite2.mmdb > /dev/null")
