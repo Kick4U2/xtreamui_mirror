@@ -5,7 +5,7 @@ from itertools import cycle
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 
-rDownloadURL = {"main": "https://bitbucket.org/emre1393/xtreamui_mirror/downloads/main_xtreamcodes_reborn.tar.gz", "sub": "https://bitbucket.org/emre1393/xtreamui_mirror/downloads/sub_xtreamcodes_reborn.tar.gz"}
+rDownloadURL = {"main": "https://bitbucket.org/le_lio/assets/raw/master/main_xui_neyslim.tar.gz", "sub": "https://bitbucket.org/le_lio/assets/raw/master/sub_xui_neyslim.tar.gz"}
 rPackages = ["libxslt1-dev", "libgeoip-dev", "e2fsprogs", "wget", "mcrypt", "nscd", "htop", "mc", "libjemalloc1", "mysql-server", "python3-pip"]
 rInstall = {"MAIN": "main", "LB": "sub"}
 rUpdate = {"UPDATE": "update"}
